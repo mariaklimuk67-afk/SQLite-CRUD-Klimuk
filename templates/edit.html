@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Редагувати книгу</title>
+</head>
+<body>
+    <h1>Редагувати книгу</h1>
+    <form method="POST">
+        Назва: <input type="text" name="title" value="{{ book[1] }}" required><br><br>
+        Автор: <input type="text" name="author" value="{{ book[2] }}" required><br><br>
+        Рік: <input type="number" name="year" value="{{ book[3] }}"><br><br>
+        Жанр: <input type="text" name="genre" value="{{ book[4] }}"><br><br>
+        <button type="submit">Оновити</button>
+        <a href="/">Скасувати</a>
+    </form>
+</body>
+</html>
